@@ -7,7 +7,7 @@ class PDFReader:
         pass
 
     def getText(self,filename):
-        reader = PdfReader(filename)
+        reader = PdfReader(/tmp/filename)
         pageCount = len(reader.pages)
         text = ""
         for pageNumber in range(pageCount):
