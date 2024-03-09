@@ -1,9 +1,11 @@
 from flask import Flask,request,jsonify
 from pdfReader import PDFReader
+from flask_cors import CORS
 import os
 
 
 app = Flask(__name__)
+CORS(app)
 pdfReader = PDFReader()
 
 try:
